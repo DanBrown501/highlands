@@ -44,9 +44,9 @@ cd path\to\highlands
   bin/rails db:migrate
   ```
 4. To seed db run:
-	```
+  ```
   rake db:seed
-	```
+  ```
 5. Launch the rails server 
 ```
 rails s
