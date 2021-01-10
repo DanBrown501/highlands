@@ -52,7 +52,7 @@ cd path\to\highlands
 rails s
 ```
 
-###Recommendations
+### Recommendations
 
 * [Yarn] Package Manager for installing react
 
