@@ -7,7 +7,7 @@ Built with:
 * [Ruby on Rails]
 * [ReactJs] 
 * [Twitter Bootstrap] 
-* [PostgreSQL] 
+* [SQLite3] 
 
 
 # Features!
@@ -64,7 +64,7 @@ rails s
 
    [Ruby on Rails]: <https://gorails.com/setup/osx/11.0-big-sur>
    [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
-   [PostgreSQL]: <https://www.postgresql.org/>
+   [SQLite3]: <https://www.sqlite.org/download.html>
    [ReactJS]: <https://yarnpkg.com/package/react>
    [Yarn]: <https://yarnpkg.com/package/react>
    [Ruby Gems]: <https://rubygems.org/>
