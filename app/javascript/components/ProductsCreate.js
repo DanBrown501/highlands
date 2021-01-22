@@ -52,7 +52,7 @@ class ProductsCreate extends React.Component {
       },
       credentials: 'same-origin'
     }).then(response => {
-      // if any errors set error state to true which brings op error messsage
+      // if any errors set error state to true which brings up error messsage
       if (response.status !== 204) {
         this.setState({ error: true });
         return;
@@ -81,7 +81,7 @@ class ProductsCreate extends React.Component {
     });
   };
 
-  // click handler for saveing of the data and adding of properties
+  // click handler for saving of the data and adding of properties
   clickHandler = e => {
     e.preventDefault();
     if (e.target.id === 'save') {
@@ -98,7 +98,7 @@ class ProductsCreate extends React.Component {
       name: this.state.propertyName,
       value: this.state.propertyValue
     };
-    //takes a copie of current state and then concats additional properties added by user
+    //takes a copy of current state and then concats additional properties added by user
     this.setState({ properties: this.state.properties.concat(propertyObj) });
     this.setState({ propertyName: '' });
     this.setState({ propertyValue: '' });

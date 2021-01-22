@@ -3,11 +3,11 @@ class GetDataController < ApplicationController
   
   def pull
     # joins associated tables and build json object to be sent to client
-    products = Product.joins(:properties, :product_properties).map do |product|
+    products = Product.left_outer_joins(:properties, :product_properties).map do |product|
       {
         name: product.name,
         upc: product.upc,
-        available_on: product.available_on.strftime("%d/%m/%Y"),
+        available_on: product.available_on.strftime("%m/%d/%Y"),
         properties: product.product_properties.map do |product_property|
           {
             name: product_property.property.name,

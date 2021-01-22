@@ -68,4 +68,3 @@ rails s
    [ReactJS]: <https://yarnpkg.com/package/react>
    [Yarn]: <https://yarnpkg.com/package/react>
    [Ruby Gems]: <https://rubygems.org/>
-

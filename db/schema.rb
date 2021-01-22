@@ -12,12 +12,15 @@
 
 ActiveRecord::Schema.define(version: 2021_01_08_040411) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "product_properties", force: :cascade do |t|
     t.string "value"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "property_id"
-    t.integer "product_id"
+    t.bigint "product_id"
+    t.bigint "property_id"
     t.index ["product_id"], name: "index_product_properties_on_product_id"
     t.index ["property_id"], name: "index_product_properties_on_property_id"
   end

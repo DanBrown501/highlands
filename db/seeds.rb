@@ -10,10 +10,10 @@ Product.destroy_all
 Property.destroy_all
 ProductProperty.destroy_all
 
-product1 = Product.create(name: "Disinfectant Spray", upc: '1234567890', available_on: '2021-11-09')
-product2 = Product.create(name: "Ultra Soft Tissue", upc: '1234567891', available_on: '2021-02-19')
-product3 = Product.create(name: "Hand Sanitizer", upc: '1234567892', available_on: '2021-11-02')
-product4 = Product.create(name: "CoronaBuster5000", upc: '1234567893', available_on: '2021-11-06')
+product1 = Product.create(name: "Disinfectant Spray", upc: '1234567890', available_on: '11/09/2021')
+product2 = Product.create(name: "Ultra Soft Tissue", upc: '1234567891', available_on: '02/19/2021')
+product3 = Product.create(name: "Hand Sanitizer", upc: '1234567892', available_on: '11/02/2021')
+product4 = Product.create(name: "CoronaBuster5000", upc: '1234567893', available_on: '11/06/2021')
 
 property1 = Property.create(name: 'brand')
 property2 = Property.create(name: 'type')
